@@ -1,0 +1,5 @@
+<p>Created Lists</p>
+<% @lists.each do |list| %>
+<p><%= link_to list.name, lists_show_path(list) %>|<%= link_to 'Delete', list, :confirm => "Are You Sure", :method => :delete  %></p>
+<% end %>
+<%= link_to "Back to home", lists_index_path %>

@@ -8549,3 +8549,155 @@ Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by ListsController#index as HTML
   Rendered lists/index.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 96.244.128.69 at 2017-04-11 06:32:52 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListsController#index as HTML
+  Rendered lists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 473ms (Views: 445.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists/index" for 96.244.128.69 at 2017-04-11 06:34:01 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#index as HTML
+  Rendered lists/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists/new" for 96.244.128.69 at 2017-04-11 06:34:02 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#new as HTML
+  Rendered lists/_form.html.erb (34.5ms)
+  Rendered lists/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 93ms (Views: 81.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/lists" for 96.244.128.69 at 2017-04-11 06:34:10 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FeN7VBbrGPjWv+YWZorpwwy6XL+3qQYXRcDSdbvtZcrh0n9wfIi6h0QoiCwJllO9mqvm6syaDBNBRPeWQlYUA==", "list"=>{"name"=>"Grocery"}, "commit"=>"Create List"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Grocery"], ["created_at", "2017-04-11 06:34:10.353727"], ["updated_at", "2017-04-11 06:34:10.353727"]]
+  [1m[35m (9.2ms)[0m  commit transaction
+Redirected to https://shopping-web-emwani1.c9users.io/lists/view
+Completed 302 Found in 21ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/lists/view" for 96.244.128.69 at 2017-04-11 06:34:10 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#view as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/view.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 96.244.128.69 at 2017-04-11 06:34:53 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListsController#index as HTML
+  Rendered lists/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 447ms (Views: 426.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists/new" for 96.244.128.69 at 2017-04-11 06:34:55 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#new as HTML
+  Rendered lists/_form.html.erb (30.7ms)
+  Rendered lists/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 100ms (Views: 93.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/lists" for 96.244.128.69 at 2017-04-11 06:35:00 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VmH+AD1c9lqZPQWeZDWzUveZzfauqI0xvlF3DQ5RJ9idsToQrPV402d3WCaNicG7DcGLH/tEQRmuQ2eagbfKHw==", "list"=>{"name"=>"Gym"}, "commit"=>"Create List"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Gym"], ["created_at", "2017-04-11 06:35:00.628353"], ["updated_at", "2017-04-11 06:35:00.628353"]]
+  [1m[35m (12.5ms)[0m  commit transaction
+Redirected to https://shopping-web-emwani1.c9users.io/lists/view
+Completed 302 Found in 22ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/lists/view" for 96.244.128.69 at 2017-04-11 06:35:00 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#view as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/view.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lists/20" for 96.244.128.69 at 2017-04-11 06:35:06 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" INNER JOIN "items_lists" ON "items"."id" = "items_lists"."item_id" WHERE "items_lists"."list_id" = ? LIMIT 1[0m  [["list_id", 20]]
+  Rendered lists/show.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 206ms (Views: 191.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/lists/20/items/new" for 96.244.128.69 at 2017-04-11 06:35:08 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#new as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 20]]
+  Rendered items/_form.html.erb (6.9ms)
+  Rendered items/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 82ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/lists/20/items" for 96.244.128.69 at 2017-04-11 06:35:11 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hzKYkD/1kD1HM+HxIiVBTIZ8bTjouK6rYdJjGRIm1OtM4lyArlwetLl5vEnLmTOlfCQr0b1UYoNxwHOOncA5LA==", "item"=>{"name"=>"Cake"}, "commit"=>"Create Item", "list_id"=>"20"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cake"], ["created_at", "2017-04-11 06:35:11.401768"], ["updated_at", "2017-04-11 06:35:11.401768"]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items_lists" ("list_id", "item_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["list_id", 20], ["item_id", 9], ["created_at", "2017-04-11 06:35:11.425809"], ["updated_at", "2017-04-11 06:35:11.425809"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://shopping-web-emwani1.c9users.io/lists/20
+Completed 302 Found in 37ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/lists/20" for 96.244.128.69 at 2017-04-11 06:35:11 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36mItem Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "items" INNER JOIN "items_lists" ON "items"."id" = "items_lists"."item_id" WHERE "items_lists"."list_id" = ? LIMIT 1[0m  [["list_id", 20]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" INNER JOIN "items_lists" ON "items"."id" = "items_lists"."item_id" WHERE "items_lists"."list_id" = ?  [["list_id", 20]]
+  Rendered lists/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists/view" for 96.244.128.69 at 2017-04-11 06:35:15 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#view as HTML
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/view.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/20" for 96.244.128.69 at 2017-04-11 06:36:41 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mList Load (0.1ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36mItem Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "items" INNER JOIN "items_lists" ON "items"."id" = "items_lists"."item_id" WHERE "items_lists"."list_id" = ? LIMIT 1[0m  [["list_id", 20]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "items_lists" ON "items"."id" = "items_lists"."item_id" WHERE "items_lists"."list_id" = ?  [["list_id", 20]]
+  Rendered lists/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/21" for 96.244.128.69 at 2017-04-11 06:36:46 +0000
+Cannot render console from 96.244.128.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Exists (0.2ms)[0m  SELECT  1 AS one FROM "items" INNER JOIN "items_lists" ON "items"."id" = "items_lists"."item_id" WHERE "items_lists"."list_id" = ? LIMIT 1  [["list_id", 21]]
+  Rendered lists/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.4ms)

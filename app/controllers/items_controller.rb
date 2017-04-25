@@ -27,12 +27,13 @@ class ItemsController < ApplicationController
   # POST /items.json
   def create
     @item = Item.new(params.require(:item).permit(:name))
+    @item.position
     @list = List.find(params[:list_id])
     if @item.save
       @list.items << @item
       redirect_to lists_show_path(@list)
     else
-      render "Couldnt add item"
+      render "Could not save item"
   end
 
   # PATCH/PUT /items/1
@@ -52,9 +53,10 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
-    @list = List.find
-    redirect_to lists_show_path(@list)
+    post.items.delete(Items.find(params[:id]))
+    redirect_to lists_view_url
   end
-
+  
 end
+
 end

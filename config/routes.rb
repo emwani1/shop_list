@@ -10,11 +10,14 @@ Rails.application.routes.draw do
   
   get 'lists/:id/items/new', :to => 'items#new', :via => [:get], :as => 'new_item'
   get 'lists/:id/item/create' => 'items#create'
-  get 'lists/:id/item/destroy' => 'items#destroy'
+  
+  
   get 'lists/:id', :to => 'lists#show', :via => [:get], :as => 'lists_show'
+  
+  
   get 'lists/:id' => 'lists#delete'
   
-  
+ 
 
   resources :items
   resources :lists
@@ -28,6 +31,8 @@ end
 resources :items do
   resources :lists
 end
+
+
   
   
   root 'lists#index'
